@@ -1,10 +1,41 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06BBCC;
+    --primary: #03076f;
     --light: #F0FBFC;
     --dark: #181d38;
 }
+.nav-item{
+    color: #03076f !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
 
+.navbar{
+    background-color: #ebebed !important;
+}
+.btn{
+    padding:14px 24px;
+    
+}
+.login{
+    background-color: #ff9f00;
+   display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 7px 20px;
+    transition: all 0.6s;
+    border-radius: 50px;
+    line-height: 1.85714285714286;
+
+}
+.login:hover{
+    background-color: #03076f;
+    color: #ff9f00;
+}
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -77,6 +108,7 @@
 
 
 /*** Navbar ***/
+
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -367,77 +399,211 @@
 }
 
 
+
+/* Home Sec */
+#homeSec{
+    background-image: url('../img/background.svg');
+    height: 87.3vh;
+    background-position: center center;
+    background-size: cover;
+}
+#homeSec h5{
+    color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+}
+#homeSec i, #featuredCourse i{
+    color: #ff9f00;
+    padding-right: 10px;
+}
+#homeSec h1{
+    font-size: 40px;
+    line-height: 63px;
+    font-weight: 600;
+    color: #fff;
+}
+#homeSec p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+#btns-home .start, #featuredCourse .start ,#subscribe .start{
+    background-color: #fff;
+    padding: 14px 24px;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #03076f;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    transition: all 0.6s;
+    
+}
+#btns-home .start:hover{
+    background-color: #ff9f00;
+    color: #03076f;
+}
+#btns-home i{
+    padding-left: 17px;
+    padding-right: 5px;
+    color: #fff;
+    transition: all 0.6s;
+}
+#btns-home .view{
+color: #fff;
+font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    transition: all 0.6s;
+}
+#btns-home .view:hover{
+    color: #ff9f00;
+}
+#btns-home .view:hover i{
+    color: #ff9f00;
+}
+#featuredCourse p{
+    font-weight: 500;
+    line-height: 29px;
+    font-size: 18px;
+    color: rgb(30, 36, 40);
+    padding-top: 13px;
+}
+#featuredCourse ul li{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: 
+    rgb(3, 0, 0);
+}
+#featuredCourse h5{
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #1E2428;
+ }
+ #featuredCourse h3{
+    font-size: 2.2222222222222rem;
+    font-family: 'Poppins', sans-serif;
+    color: #1E2428;
+    line-height: 1.3em;
+    padding-top: 17px;
+ }
+ #featuredCourse .start{
+    background-color: #03076f;
+    color: #fff;
+    transition: all 0.3s;
+ }
+ #featuredCourse .start:hover{
+    background-color: #ff9f00;
+ }
+ #featuredCourse img{
+    box-shadow: 40px 80px 120px -40px rgba(0, 0, 0, 0.16);
+ }
+ #courses .card{
+    box-shadow: 0px 64px 200px 0px rgba(0, 0, 0, 0.08) !important;
+    border-radius: 16px;
+    height: 400px;
+    padding: 15px 0;
+ }
+ #courses img{
+    border-radius: 15px;
+ }
+ #courses h4{
+    color: rgb(3, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+ }
+ #courses p{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    color: rgb(3, 0, 0);
+    text-transform: uppercase;
+ }
+ #courses i{
+    color: #ff9f00;
+    padding-right: 10px;
+ }
+ #courses ul li{
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 600;
+    color: rgb(87, 97, 104);
+  }
+  #subscribe{
+    background-image: url('../../static/img/background.svg');
+    background-position: center center;
+    background-size: cover;
+    height: 60vh;
+  }
+  #subscribe h6{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #fff;
+  }
+  #subscribe h3{
+    line-height: 73px;
+    font-size: 56px;
+    font-weight: 600;
+    color: #fff;
+  }
+  #subscribe p{
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: 600;
+    color: #fff;
+
+  }
+  #subscribe .start:hover{
+    background-color: #ff9f00;
+    color: #fff;
+  }
+  
 /*** Footer ***/
-.footer .btn.btn-social {
-    margin-right: 5px;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--light);
-    font-weight: normal;
-    border: 1px solid #FFFFFF;
-    border-radius: 35px;
-    transition: .3s;
+footer{
+    background-color: #030000;
+    padding: 20px 0
 }
-.footerNew{
-    clear: both;
-   
-    /* position:absolute; */
-    position: sticky;
-    z-index: 999;
-
-    bottom: 5px;
-
+footer p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
 }
-.footer .btn.btn-social:hover {
-    color: var(--primary);
+footer ul li , footer a{
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.5s;
 }
-
-.footer .btn.btn-link {
-    display: block;
-    margin-bottom: 5px;
-    padding: 0;
-    text-align: left;
-    color: #FFFFFF;
-    font-size: 15px;
-    font-weight: normal;
-    text-transform: capitalize;
-    transition: .3s;
+footer a:hover{
+    color: #ff9f00;
 }
-
-.footer .btn.btn-link::before {
-    position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
-}
-
-.footer .btn.btn-link:hover {
-    letter-spacing: 1px;
-    box-shadow: none;
-}
-
-.footer .copyright {
-    padding: 25px 0;
-    font-size: 15px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
-}
-
-.footer .copyright a {
-    color: var(--light);
-}
-
-.footer .footer-menu a {
-    margin-right: 15px;
-    padding-right: 15px;
-    border-right: 1px solid rgba(255, 255, 255, .1);
-}
-
-.footer .footer-menu a:last-child {
-    margin-right: 0;
-    padding-right: 0;
-    border-right: none;
+@media screen and (max-width:750px) {
+    #homeSec h1{
+        font-size: 22px;
+    }
+    #homeSec p{
+        font-size: 13px;
+    }
+    #homeSec img{
+        width: 90% !important;
+    }
+    #featuredCourse ul li{
+        font-size: 14px;
+    }
+    #featuredCourse img{
+        width: 80%;
+    }
 }
