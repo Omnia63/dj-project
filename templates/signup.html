@@ -1,6 +1,7 @@
 {% extends "parts/mainTemplate.html" %}
 
 {% block content %}
+
 <div class="container d-flex justify-content-center align-items-center mt-4 mb-4">
     <form class="card shadow-lg w-100" style="max-width: 400px;">
         <div class="card-body">
@@ -31,10 +32,10 @@
             </div>
 
             <!-- Submit Button -->
-            <button type="submit" class="btn btn-primary w-100">Register</button>
+            <button id="signup-button" type="submit" class="btn w-100 px-4">Register</button>
 
             <div class="text-center mt-3">
-                <p>Already have an account? <a href="/login">Login here</a></p>
+                <p>Already have an account? <a href="{% url 'login' %}">Login here</a></p>
             </div>
         </div>
     </form>

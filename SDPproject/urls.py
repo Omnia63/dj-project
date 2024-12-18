@@ -27,11 +27,12 @@ urlpatterns = [
     # path("polls/", include("pages.urls")),
     # path("polls/", include("polls.urls")),
     path('courses/',include('courses.urls')),
-
+    
     # Login URL
     path('login/', auth_views.LoginView.as_view(), name='login'),
     # Logout URL
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+
 
 
 ]
