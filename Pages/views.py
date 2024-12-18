@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login,logout
 from django.contrib.auth.forms import AuthenticationForm,UserCreationForm
 from .forms import CustomLoginForm
-from django.http import HttpResponse
+from django.http import HttpResponse # type: ignore
 
 
 # Create your views here.
@@ -15,6 +15,8 @@ def index (request):
 
 def about (request):
     return  render(request,'pages/about.html')
+def courses (request):
+    return  render(request,'parts/courses.html')
 
 
 def custom_login(request):
